@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="home.metaTitle">Northline Dental — family &amp; cosmetic dentistry in Portland</title>
+<meta name="description" data-i18n-attr="content:home.metaDesc" content="Family and cosmetic dentistry in Portland. Book online in two minutes, Saturday appointments, same-day emergency slots, most insurance accepted.">
+<meta name="theme-color" content="#FBF9F5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121817" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Northline Dental — family &amp; cosmetic dentistry in Portland">
+<meta property="og:description" content="Book your appointment online in two minutes. Saturday hours, emergency slots, most insurance accepted.">
+<meta property="og:url" content="https://dmitrii-mazurkevich.github.io/dental-clinic-website/">
+<link rel="canonical" href="https://dmitrii-mazurkevich.github.io/dental-clinic-website/">
+<link rel="alternate" hreflang="en" href="https://dmitrii-mazurkevich.github.io/dental-clinic-website/?lang=en">
+<link rel="alternate" hreflang="ru" href="https://dmitrii-mazurkevich.github.io/dental-clinic-website/?lang=ru">
+<link rel="alternate" hreflang="ka" href="https://dmitrii-mazurkevich.github.io/dental-clinic-website/?lang=ka">
+<link rel="alternate" hreflang="x-default" href="https://dmitrii-mazurkevich.github.io/dental-clinic-website/">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230E4F52'/%3E%3Cpath d='M50 26c-9-8-24-6-24 10 0 14 6 20 9 30 2 7 8 10 10 2l5-16 5 16c2 8 8 5 10-2 3-10 9-16 9-30 0-16-15-18-24-10z' fill='%23fff'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&family=Noto+Sans+Georgian:wght@400;500;700&family=Noto+Serif+Georgian:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/main.css">
+
+<script>
+  // Pick the language before first paint so nothing flashes.
+  (function () {
+    var d = document.documentElement, langs = ['en', 'ru', 'ka'], lang = null;
+    var p = location.search.match(/[?&]lang=([a-z]{2})/i);
+    if (p && langs.indexOf(p[1].toLowerCase()) > -1) lang = p[1].toLowerCase();
+    if (!lang) { try { var s = localStorage.getItem('nd-lang'); if (langs.indexOf(s) > -1) lang = s; } catch (e) {} }
+    if (!lang) {
+      var n = (navigator.language || 'en').toLowerCase();
+      lang = n.indexOf('ru') === 0 ? 'ru' : (n.indexOf('ka') === 0 ? 'ka' : 'en');
+    }
+    d.setAttribute('data-lang', lang);
+    if (lang !== 'en') {
+      d.className += ' i18n-pending';
+      setTimeout(function () { d.classList.remove('i18n-pending'); }, 1200);
+    }
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Northline Dental",
+  "image": "https://dmitrii-mazurkevich.github.io/dental-clinic-website/assets/img/og.jpg",
+  "url": "https://dmitrii-mazurkevich.github.io/dental-clinic-website/",
+  "telephone": "+1-555-011-0248",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "48 Northline Avenue",
+    "addressLocality": "Portland",
+    "addressRegion": "OR",
+    "postalCode": "97205",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 45.5231, "longitude": -122.6845 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00" }
+  ],
+  "paymentAccepted": "Cash, Credit Card, Insurance",
+  "availableLanguage": ["English", "Russian", "Georgian"],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "312" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Dental services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Check-up and hygiene" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fillings and restorations" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Teeth whitening" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crowns and veneers" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dental implants" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency dental care" } }
+    ]
+  }
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+
+<div class="utility">
+  <div class="container">
+    <div class="utility__row">
+      <div class="utility__left">
+        <span class="utility__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span data-i18n="util.hours">Mon–Fri 8:00–18:00 · Sat 9:00–14:00</span>
+        </span>
+        <span class="utility__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span>48 Northline Avenue, Portland</span>
+        </span>
+      </div>
+      <div class="utility__right">
+        <a class="utility__item" href="tel:+15550110248">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 12l5 2v4a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z"/></svg>
+          +1 (555) 011-0248
+        </a>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+          <button type="button" data-lang="ka" aria-pressed="false">KA</button>
+        </div>
+        <button class="icon-btn theme-toggle" type="button" data-i18n-attr="aria-label:util.theme" aria-label="Switch colour theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Main">
+      <a class="logo" href="index.html">
+        <svg class="logo__mark" viewBox="0 0 100 100" aria-hidden="true">
+          <rect width="100" height="100" rx="20" fill="var(--accent)"/>
+          <path d="M50 26c-9-8-24-6-24 10 0 14 6 20 9 30 2 7 8 10 10 2l5-16 5 16c2 8 8 5 10-2 3-10 9-16 9-30 0-16-15-18-24-10z" fill="var(--accent-ink)"/>
+        </svg>
+        <span class="logo__text">
+          <span class="logo__name">Northline Dental</span>
+          <span class="logo__sub" data-i18n="logo.sub">Portland, Oregon</span>
+        </span>
+      </a>
+
+      <ul class="nav__list">
+        <li><a href="index.html" aria-current="page" data-i18n="nav.home">Home</a></li>
+        <li><a href="services.html" data-i18n="nav.services">Treatments</a></li>
+        <li><a href="index.html#team" data-i18n="nav.team">Our team</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Visit us</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <div class="lang lang--mobile" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+          <button type="button" data-lang="ka" aria-pressed="false">KA</button>
+        </div>
+        <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-i18n-attr="aria-label:nav.menu" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <a class="btn btn--sm nav__book" href="booking.html" data-i18n="nav.book">Book online</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" data-i18n="nav.home">Home</a>
+  <a href="services.html" data-i18n="nav.services">Treatments</a>
+  <a href="index.html#team" data-i18n="nav.team">Our team</a>
+  <a href="contact.html" data-i18n="nav.contact">Visit us</a>
+  <div class="mobile-menu__foot">
+    <p class="mobile-menu__hours" data-i18n="util.hours">Mon–Fri 8:00–18:00 · Sat 9:00–14:00</p>
+    <a class="btn btn--outline" href="tel:+15550110248">+1 (555) 011-0248</a>
+    <a class="btn" href="booking.html" data-i18n="nav.book">Book online</a>
+    <button class="btn btn--quiet theme-toggle" type="button">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <span data-i18n="util.theme">Switch colour theme</span>
+    </button>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__grid">
+        <div>
+          <p class="eyebrow" data-i18n="home.eyebrow">Family &amp; cosmetic dentistry</p>
+          <h1 class="hero__title" data-i18n-html="home.title">A dentist appointment <em>without the phone call</em></h1>
+          <p class="hero__lede" data-i18n="home.lede">
+            We've looked after Portland families for eleven years. Pick a time that suits you
+            and confirm it in under two minutes — no hold music, no callback.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--lg" href="booking.html">
+              <span data-i18n="home.ctaBook">Book online</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--outline btn--lg" href="tel:+15550110248">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 12l5 2v4a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z"/></svg>
+              +1 (555) 011-0248
+            </a>
+          </div>
+
+          <ul class="hero__points">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+              <span data-i18n="home.point1">Open on Saturdays</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+              <span data-i18n="home.point2">Same-day emergency slots</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+              <span data-i18n="home.point3">Most insurance accepted</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="slot-card reveal">
+          <div class="slot-card__head">
+            <span class="slot-card__title" data-i18n="home.slotsTitle">Next available</span>
+            <span class="open-badge" data-open-badge data-open="true">
+              <span data-i18n="home.openNow">Open now</span>
+            </span>
+          </div>
+
+          <div class="slot-day">
+            <p class="slot-day__label" data-slot-day="0" data-i18n="home.today">Today</p>
+            <div class="slot-day__times">
+              <a class="slot-chip" href="booking.html">14:30</a>
+              <a class="slot-chip" href="booking.html">15:15</a>
+              <a class="slot-chip" href="booking.html">16:45</a>
+            </div>
+          </div>
+
+          <div class="slot-day">
+            <p class="slot-day__label" data-slot-day="1" data-i18n="home.tomorrow">Tomorrow</p>
+            <div class="slot-day__times">
+              <a class="slot-chip" href="booking.html">09:00</a>
+              <a class="slot-chip" href="booking.html">10:30</a>
+              <a class="slot-chip" href="booking.html">11:15</a>
+              <a class="slot-chip" href="booking.html">13:00</a>
+            </div>
+          </div>
+
+          <p class="slot-card__foot" data-i18n="home.slotsFoot">
+            In pain right now? Call us — we keep emergency slots free every working day.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INFO BAR ================= -->
+  <section class="infobar">
+    <div class="container">
+      <div class="infobar__grid">
+        <div class="infobar__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div>
+            <div class="infobar__label" data-i18n="info.address">Address</div>
+            <div class="infobar__value">48 Northline Avenue
+              <small data-i18n="info.addressSub">Portland, OR 97205 · parking behind the building</small>
+            </div>
+          </div>
+        </div>
+        <div class="infobar__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div>
+            <div class="infobar__label" data-i18n="info.today">Today</div>
+            <div class="infobar__value"><span data-today-hours>8:00 – 18:00</span>
+              <small data-i18n="info.hoursSub">Mon–Fri 8:00–18:00 · Sat 9:00–14:00 · Sun closed</small>
+            </div>
+          </div>
+        </div>
+        <div class="infobar__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 12l5 2v4a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z"/></svg>
+          <div>
+            <div class="infobar__label" data-i18n="info.phone">Reception</div>
+            <div class="infobar__value"><a href="tel:+15550110248">+1 (555) 011-0248</a>
+              <small data-i18n="info.phoneSub">Or book online any time, day or night</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <p class="eyebrow" data-i18n="home.svcEyebrow">Treatments</p>
+        <h2 class="section-title" data-i18n="home.svcTitle">Everything most families ever need, in one practice</h2>
+        <p class="section-lede" data-i18n="home.svcLede">
+          Prices below are starting points. You always get a written quote before any treatment
+          begins — nothing is added to your bill without your say-so.
+        </p>
+      </div>
+
+      <div class="grid grid--3">
+        <a class="svc reveal" href="services.html#checkup">
+          <span class="svc__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6c-3-2.6-8-2-8 3.3 0 4.7 2 6.7 3 10 .7 2.3 2.7 3.3 3.3.7L12 14.7l1.7 5.3c.6 2.6 2.6 1.6 3.3-.7 1-3.3 3-5.3 3-10C20 4 15 3.4 12 6z"/></svg>
+          </span>
+          <h3 class="svc__title" data-i18n="svc.1t">Check-up &amp; hygiene</h3>
+          <p class="svc__text" data-i18n="svc.1d">Full examination, X-rays if needed, professional cleaning and a plan you can actually read.</p>
+          <span class="svc__foot"><span data-i18n="svc.from">from</span> <span class="svc__price">$95</span></span>
+        </a>
+
+        <a class="svc reveal" href="services.html#fillings">
+          <span class="svc__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20 14.5 9.5m0 0 2-2a3 3 0 0 1 4 4l-2 2m-4-4 4 4M6 18l-1 3 3-1"/></svg>
+          </span>
+          <h3 class="svc__title" data-i18n="svc.2t">Fillings &amp; restorations</h3>
+          <p class="svc__text" data-i18n="svc.2d">Tooth-coloured composite fillings, inlays and repairs — matched to the shade of your own teeth.</p>
+          <span class="svc__foot"><span data-i18n="svc.from">from</span> <span class="svc__price">$180</span></span>
+        </a>
+
+        <a class="svc reveal" href="services.html#whitening">
+          <span class="svc__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.5"/></svg>
+          </span>
+          <h3 class="svc__title" data-i18n="svc.3t">Teeth whitening</h3>
+          <p class="svc__text" data-i18n="svc.3d">In-practice whitening in a single visit, or custom trays to use at home at your own pace.</p>
+          <span class="svc__foot"><span data-i18n="svc.from">from</span> <span class="svc__price">$340</span></span>
+        </a>
+
+        <a class="svc reveal" href="services.html#crowns">
+          <span class="svc__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 17 1.5-9 4 4L12 5l2.5 7 4-4L20 17z"/><path d="M4 20h16"/></svg>
+          </span>
+          <h3 class="svc__title" data-i18n="svc.4t">Crowns &amp; veneers</h3>
+          <p class="svc__text" data-i18n="svc.4d">Ceramic crowns and veneers designed digitally, so you see the result before we start.</p>
+          <span class="svc__foot"><span data-i18n="svc.from">from</span> <span class="svc__price">$850</span></span>
+        </a>
+
+        <a class="svc reveal" href="services.html#implants">
+          <span class="svc__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a4 4 0 0 1 4 4v2H8V7a4 4 0 0 1 4-4z"/><path d="M10 9v12M14 9v12M9 13h6M9 17h6"/></svg>
+          </span>
+          <h3 class="svc__title" data-i18n="svc.5t">Dental implants</h3>
+          <p class="svc__text" data-i18n="svc.5d">Single implants through to full-arch work, planned with 3D imaging and placed in-house.</p>
+          <span class="svc__foot"><span data-i18n="svc.from">from</span> <span class="svc__price">$2,400</span></span>
+        </a>
+
+        <a class="svc reveal" href="services.html#emergency">
+          <span class="svc__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4.5 8-11V5.5L12 3 4 5.5V11c0 6.5 8 11 8 11z"/><path d="M12 8v5M12 16h.01"/></svg>
+          </span>
+          <h3 class="svc__title" data-i18n="svc.6t">Emergency care</h3>
+          <p class="svc__text" data-i18n="svc.6d">Pain, a broken tooth or a lost filling — we hold slots free every working day for urgent cases.</p>
+          <span class="svc__foot"><span data-i18n="svc.from">from</span> <span class="svc__price">$120</span></span>
+        </a>
+      </div>
+
+      <div class="center-actions mt-4">
+        <a class="btn btn--quiet" href="services.html" data-i18n="home.svcAll">All treatments and prices</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY US ================= -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="home.whyEyebrow">Why patients stay</p>
+        <h2 class="section-title" data-i18n="home.whyTitle">The things people actually tell us they were looking for</h2>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="feature reveal">
+          <span class="feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/></svg>
+          </span>
+          <div>
+            <h3 data-i18n="home.why1t">You see the same dentist</h3>
+            <p data-i18n="home.why1d">Not whoever is free that week. Your dentist knows your history, and you don't have to explain it again every visit.</p>
+          </div>
+        </div>
+
+        <div class="feature reveal">
+          <span class="feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 10h8M8 14h5"/></svg>
+          </span>
+          <div>
+            <h3 data-i18n="home.why2t">The price is agreed first</h3>
+            <p data-i18n="home.why2d">A written quote before treatment starts, with what your insurance covers and what it doesn't. No surprises at the desk afterwards.</p>
+          </div>
+        </div>
+
+        <div class="feature reveal">
+          <span class="feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 21.4l8.8-8.7a5 5 0 0 0 0-7.1z"/></svg>
+          </span>
+          <div>
+            <h3 data-i18n="home.why3t">Nervous patients are welcome</h3>
+            <p data-i18n="home.why3d">Longer appointments, everything explained before it happens, and a stop signal you can use at any moment. Say so when you book.</p>
+          </div>
+        </div>
+
+        <div class="feature reveal">
+          <span class="feature__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+          </span>
+          <div>
+            <h3 data-i18n="home.why4t">Evenings and Saturdays</h3>
+            <p data-i18n="home.why4d">Appointments until 18:00 on weekdays and every Saturday morning, so you don't have to take a day off work.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FIRST VISIT ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <p class="eyebrow" data-i18n="home.visitEyebrow">Your first visit</p>
+        <h2 class="section-title" data-i18n="home.visitTitle">What happens, step by step</h2>
+        <p class="section-lede" data-i18n="home.visitLede">
+          Most people's worry is not knowing what's coming. Here's the whole thing.
+        </p>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <h3 data-i18n="home.visit1t">Book in two minutes</h3>
+          <p data-i18n="home.visit1d">Choose a treatment, a day and a time online. You get a confirmation immediately and a reminder the day before.</p>
+        </div>
+        <div class="step reveal">
+          <h3 data-i18n="home.visit2t">Arrive ten minutes early</h3>
+          <p data-i18n="home.visit2d">Bring your ID and insurance card. There's a short health questionnaire — you can fill it in at home from the link in your confirmation.</p>
+        </div>
+        <div class="step reveal">
+          <h3 data-i18n="home.visit3t">Examination and X-rays</h3>
+          <p data-i18n="home.visit3d">A full check of teeth, gums and bite, with digital X-rays where they're needed. Around 30 minutes.</p>
+        </div>
+        <div class="step reveal">
+          <h3 data-i18n="home.visit4t">A plan and a price</h3>
+          <p data-i18n="home.visit4d">We go through what we found, what's urgent, what can wait, and what each option costs. You take the written plan home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TEAM ================= -->
+  <section class="section section--alt" id="team">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="home.teamEyebrow">Our team</p>
+        <h2 class="section-title" data-i18n="home.teamTitle">The people who will actually treat you</h2>
+      </div>
+
+      <div class="team">
+        <article class="person reveal">
+          <div class="person__photo">
+            <svg viewBox="0 0 200 150" role="img" aria-label="Portrait placeholder">
+              <rect width="200" height="150" fill="var(--accent-soft)"/>
+              <circle cx="100" cy="62" r="26" fill="var(--accent)" opacity=".35"/>
+              <path d="M56 150a44 44 0 0 1 88 0z" fill="var(--accent)" opacity=".35"/>
+              <text x="100" y="72" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="26" font-weight="600" fill="var(--accent)">EM</text>
+            </svg>
+          </div>
+          <div class="person__body">
+            <h3 class="person__name">Dr. Elena Marsh</h3>
+            <p class="person__role" data-i18n="team.1r">Principal dentist</p>
+            <p class="person__text" data-i18n="team.1d">Founded the practice in 2015. General and cosmetic dentistry, with a particular interest in treating anxious patients.</p>
+            <p class="person__meta" data-i18n="team.1m">DDS · 14 years in practice · English, Russian</p>
+          </div>
+        </article>
+
+        <article class="person reveal">
+          <div class="person__photo">
+            <svg viewBox="0 0 200 150" role="img" aria-label="Portrait placeholder">
+              <rect width="200" height="150" fill="var(--accent-soft)"/>
+              <circle cx="100" cy="62" r="26" fill="var(--accent)" opacity=".35"/>
+              <path d="M56 150a44 44 0 0 1 88 0z" fill="var(--accent)" opacity=".35"/>
+              <text x="100" y="72" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="26" font-weight="600" fill="var(--accent)">TR</text>
+            </svg>
+          </div>
+          <div class="person__body">
+            <h3 class="person__name">Dr. Tomas Reid</h3>
+            <p class="person__role" data-i18n="team.2r">Implants &amp; oral surgery</p>
+            <p class="person__text" data-i18n="team.2d">Places and restores implants in-house, from single teeth to full-arch cases, planned with 3D imaging.</p>
+            <p class="person__meta" data-i18n="team.2m">DMD · 11 years in practice · English</p>
+          </div>
+        </article>
+
+        <article class="person reveal">
+          <div class="person__photo">
+            <svg viewBox="0 0 200 150" role="img" aria-label="Portrait placeholder">
+              <rect width="200" height="150" fill="var(--accent-soft)"/>
+              <circle cx="100" cy="62" r="26" fill="var(--accent)" opacity=".35"/>
+              <path d="M56 150a44 44 0 0 1 88 0z" fill="var(--accent)" opacity=".35"/>
+              <text x="100" y="72" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-size="26" font-weight="600" fill="var(--accent)">SB</text>
+            </svg>
+          </div>
+          <div class="person__body">
+            <h3 class="person__name">Sofia Berg</h3>
+            <p class="person__role" data-i18n="team.3r">Dental hygienist</p>
+            <p class="person__text" data-i18n="team.3d">Handles cleanings, gum health and prevention — and is the reason most of our patients stop needing fillings.</p>
+            <p class="person__meta" data-i18n="team.3m">RDH · 8 years in practice · English, Georgian</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= REVIEWS ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <p class="eyebrow" data-i18n="home.revEyebrow">Reviews</p>
+        <h2 class="section-title" data-i18n="home.revTitle">What patients say</h2>
+        <p class="mt-3">
+          <span class="rating-summary">
+            <span class="stars" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+            </span>
+            <b>4.9</b>
+            <span data-i18n="home.revCount">from 312 patient reviews</span>
+          </span>
+        </p>
+      </div>
+
+      <div class="reviews">
+        <article class="review reveal">
+          <span class="stars" aria-label="5 out of 5">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+          </span>
+          <p class="review__text" data-i18n="rev.1t">I hadn't seen a dentist in six years because of nerves. They booked me a double appointment, talked me through everything first, and stopped whenever I raised my hand. I've been back three times since.</p>
+          <p class="review__who"><b data-i18n="rev.1n">Marta K.</b><span data-i18n="rev.1m">Patient since 2023</span></p>
+        </article>
+
+        <article class="review reveal">
+          <span class="stars" aria-label="5 out of 5">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+          </span>
+          <p class="review__text" data-i18n="rev.2t">Broke a molar on a Sunday. Booked the first slot on Monday morning through the website at 11pm, and it was fixed by ten the next day. The quote I was given was the amount I paid.</p>
+          <p class="review__who"><b data-i18n="rev.2n">David L.</b><span data-i18n="rev.2m">Emergency appointment</span></p>
+        </article>
+
+        <article class="review reveal">
+          <span class="stars" aria-label="5 out of 5">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 3 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg>
+          </span>
+          <p class="review__text" data-i18n="rev.3t">Two children, both of whom used to hate the dentist, both of whom now ask when the next visit is. Saturday appointments mean we don't lose a school day either.</p>
+          <p class="review__who"><b data-i18n="rev.3n">Anna S.</b><span data-i18n="rev.3m">Family patient</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INSURANCE ================= -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="loc-grid">
+        <div class="reveal">
+          <p class="eyebrow" data-i18n="home.insEyebrow">Insurance &amp; payment</p>
+          <h2 class="section-title" data-i18n="home.insTitle">We'll check your cover before you commit</h2>
+          <p class="section-lede" data-i18n="home.insLede">
+            Tell us your provider when you book and reception will confirm what's covered before
+            your appointment — not after the treatment.
+          </p>
+          <p class="mt-3 muted" style="font-size:.9rem" data-i18n="home.insNote">
+            Not insured? Treatment over $600 can be split into interest-free monthly payments.
+          </p>
+        </div>
+        <div class="reveal">
+          <div class="logos">
+            <span>Delta Dental</span><span>Cigna</span><span>MetLife</span>
+            <span>Aetna</span><span>Guardian</span><span>United Concordia</span>
+            <span>Humana</span><span data-i18n="home.insMore">and others</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="home.faqEyebrow">Questions</p>
+        <h2 class="section-title" data-i18n="home.faqTitle">Things people ask before their first visit</h2>
+      </div>
+
+      <div class="faq">
+        <div class="faq__item">
+          <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1">
+            <span data-i18n="faq.1q">How quickly can I be seen?</span>
+            <span class="faq__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button></h3>
+          <div class="faq__a" id="faq-1"><div><p data-i18n="faq.1a">
+            Routine appointments are usually available within three to five days, and often
+            sooner. We hold emergency slots free every working day, so if you're in pain, call
+            in the morning and we will see you that day.
+          </p></div></div>
+        </div>
+
+        <div class="faq__item">
+          <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-2">
+            <span data-i18n="faq.2q">What does the first appointment cost?</span>
+            <span class="faq__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button></h3>
+          <div class="faq__a" id="faq-2"><div><p data-i18n="faq.2a">
+            A full examination with X-rays and a written treatment plan is $95. If you go ahead
+            with hygiene treatment on the same visit, that's included in the cleaning price
+            rather than charged twice.
+          </p></div></div>
+        </div>
+
+        <div class="faq__item">
+          <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-3">
+            <span data-i18n="faq.3q">I'm genuinely afraid of the dentist. Can you help?</span>
+            <span class="faq__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button></h3>
+          <div class="faq__a" id="faq-3"><div><p data-i18n="faq.3a">
+            Yes, and you're in good company — it's one of the most common reasons people come to
+            us. Tick the box when you book and we'll give you a longer appointment, explain
+            every step before it happens, and stop the moment you raise your hand. Sedation is
+            available for longer treatments.
+          </p></div></div>
+        </div>
+
+        <div class="faq__item">
+          <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-4">
+            <span data-i18n="faq.4q">Do you treat children?</span>
+            <span class="faq__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button></h3>
+          <div class="faq__a" id="faq-4"><div><p data-i18n="faq.4a">
+            From age three upwards. First visits for children are short, free of charge and
+            involve nothing more than a look and a ride in the chair — the point is that they
+            leave without being frightened of the place.
+          </p></div></div>
+        </div>
+
+        <div class="faq__item">
+          <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-5">
+            <span data-i18n="faq.5q">What if I need to cancel?</span>
+            <span class="faq__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button></h3>
+          <div class="faq__a" id="faq-5"><div><p data-i18n="faq.5a">
+            Just let us know at least 24 hours ahead and there's no charge — there's a link in
+            your confirmation email. Late cancellations are only charged if they become a habit,
+            and never for genuine emergencies.
+          </p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LOCATION ================= -->
+  <section class="section section--alt" id="visit">
+    <div class="container">
+      <div class="loc-grid">
+        <div class="reveal">
+          <p class="eyebrow" data-i18n="home.locEyebrow">Finding us</p>
+          <h2 class="section-title" data-i18n="home.locTitle">48 Northline Avenue, Portland</h2>
+
+          <ul class="contact-lines">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span data-i18n="home.locAddr">48 Northline Avenue, Portland, OR 97205. Free patient parking behind the building, entrance from Cedar Street.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 12l5 2v4a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z"/></svg>
+              <a href="tel:+15550110248">+1 (555) 011-0248</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="m4 6 8 7 8-7"/></svg>
+              <a href="mailto:hello@northline.example.com">hello@northline.example.com</a>
+            </li>
+          </ul>
+
+          <h3 class="mt-4 mb-3" style="font-size:var(--step-1)" data-i18n="home.hoursTitle">Opening hours</h3>
+          <ul class="hours" data-hours>
+            <li data-day="1"><span data-i18n="day.mon">Monday</span><span>8:00 – 18:00</span></li>
+            <li data-day="2"><span data-i18n="day.tue">Tuesday</span><span>8:00 – 18:00</span></li>
+            <li data-day="3"><span data-i18n="day.wed">Wednesday</span><span>8:00 – 18:00</span></li>
+            <li data-day="4"><span data-i18n="day.thu">Thursday</span><span>8:00 – 18:00</span></li>
+            <li data-day="5"><span data-i18n="day.fri">Friday</span><span>8:00 – 18:00</span></li>
+            <li data-day="6"><span data-i18n="day.sat">Saturday</span><span>9:00 – 14:00</span></li>
+            <li data-day="0"><span data-i18n="day.sun">Sunday</span><span data-i18n="day.closed">Closed</span></li>
+          </ul>
+        </div>
+
+        <div class="reveal">
+          <div class="map-frame">
+            <svg viewBox="0 0 640 440" role="img" aria-label="Map showing the practice location">
+              <rect width="640" height="440" fill="var(--surface-2)"/>
+              <g stroke="var(--line)" stroke-width="14" fill="none">
+                <path d="M-20 120h680M-20 300h680M120 -20v480M420 -20v480"/>
+              </g>
+              <g stroke="var(--line)" stroke-width="6" fill="none">
+                <path d="M-20 210h680M270 -20v480M540 -20v480"/>
+              </g>
+              <g fill="var(--line)" opacity=".55">
+                <rect x="150" y="150" width="90" height="40" rx="4"/>
+                <rect x="150" y="230" width="90" height="50" rx="4"/>
+                <rect x="300" y="150" width="90" height="40" rx="4"/>
+                <rect x="450" y="230" width="70" height="50" rx="4"/>
+                <rect x="450" y="140" width="70" height="50" rx="4"/>
+                <rect x="30" y="150" width="70" height="40" rx="4"/>
+                <rect x="30" y="330" width="70" height="60" rx="4"/>
+                <rect x="300" y="330" width="90" height="60" rx="4"/>
+              </g>
+              <rect x="300" y="230" width="100" height="50" rx="4" fill="var(--accent)" opacity=".25"/>
+              <circle cx="350" cy="255" r="34" fill="var(--accent)" opacity=".14"/>
+              <path d="M350 218c-11 0-20 9-20 20 0 14 20 34 20 34s20-20 20-34c0-11-9-20-20-20z" fill="var(--accent)"/>
+              <circle cx="350" cy="238" r="7" fill="var(--surface)"/>
+              <text x="24" y="112" font-family="Source Sans 3, Arial, sans-serif" font-size="15" fill="var(--muted)">Cedar St</text>
+              <text x="24" y="292" font-family="Source Sans 3, Arial, sans-serif" font-size="15" fill="var(--muted)">Maple Ave</text>
+              <text x="430" y="60" font-family="Source Sans 3, Arial, sans-serif" font-size="15" fill="var(--muted)">Northline Ave</text>
+            </svg>
+          </div>
+          <p class="muted mt-2" style="font-size:.85rem" data-i18n="home.mapNote">
+            Illustrative map. On the live site this is replaced with an embedded map, loaded only
+            after the visitor asks for it so it doesn't slow the page down.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="section--tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2 data-i18n="home.ctaTitle">Ready when you are</h2>
+        <p data-i18n="home.ctaLede">
+          Booking takes about two minutes and you'll have a confirmation before you close the tab.
+        </p>
+        <div class="center-actions">
+          <a class="btn btn--lg" href="booking.html" data-i18n="nav.book">Book online</a>
+          <a class="btn btn--outline btn--lg" href="tel:+15550110248">+1 (555) 011-0248</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="index.html">
+          <svg class="logo__mark" viewBox="0 0 100 100" aria-hidden="true">
+            <rect width="100" height="100" rx="20" fill="var(--accent)"/>
+            <path d="M50 26c-9-8-24-6-24 10 0 14 6 20 9 30 2 7 8 10 10 2l5-16 5 16c2 8 8 5 10-2 3-10 9-16 9-30 0-16-15-18-24-10z" fill="var(--accent-ink)"/>
+          </svg>
+          <span class="logo__text">
+            <span class="logo__name">Northline Dental</span>
+            <span class="logo__sub" data-i18n="logo.sub">Portland, Oregon</span>
+          </span>
+        </a>
+        <p class="footer__about" data-i18n="foot.about">
+          Family and cosmetic dentistry on Northline Avenue since 2015. Saturday appointments,
+          emergency slots every working day, and a written price before treatment starts.
+        </p>
+      </div>
+
+      <div>
+        <h4 data-i18n="foot.pages">Pages</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="services.html" data-i18n="nav.services">Treatments</a></li>
+          <li><a href="index.html#team" data-i18n="nav.team">Our team</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Visit us</a></li>
+          <li><a href="booking.html" data-i18n="nav.book">Book online</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 data-i18n="foot.treatments">Treatments</h4>
+        <ul>
+          <li><a href="services.html#checkup" data-i18n="svc.1t">Check-up &amp; hygiene</a></li>
+          <li><a href="services.html#fillings" data-i18n="svc.2t">Fillings &amp; restorations</a></li>
+          <li><a href="services.html#whitening" data-i18n="svc.3t">Teeth whitening</a></li>
+          <li><a href="services.html#implants" data-i18n="svc.5t">Dental implants</a></li>
+          <li><a href="services.html#emergency" data-i18n="svc.6t">Emergency care</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 data-i18n="foot.contact">Contact</h4>
+        <ul>
+          <li><a href="tel:+15550110248">+1 (555) 011-0248</a></li>
+          <li><a href="mailto:hello@northline.example.com">hello@northline.example.com</a></li>
+          <li>48 Northline Avenue</li>
+          <li>Portland, OR 97205</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> Northline Dental</span>
+      <span data-i18n="foot.demo">Concept site built for a web-development portfolio.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="action-bar">
+  <a class="btn btn--outline" href="tel:+15550110248">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 12l5 2v4a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z"/></svg>
+    <span data-i18n="bar.call">Call</span>
+  </a>
+  <a class="btn" href="booking.html" data-i18n="bar.book">Book online</a>
+</div>
+
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
