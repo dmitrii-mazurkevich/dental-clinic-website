@@ -22,7 +22,7 @@
   var p = location.search.match(/[?&]lang=([a-z]{2})/i);
   if (p && langs.indexOf(p[1].toLowerCase()) > -1) lang = p[1].toLowerCase();
   if (!lang) { try { var s = localStorage.getItem('nd-lang'); if (langs.indexOf(s) > -1) lang = s; } catch (e) {} }
-  if (!lang) { var n = (navigator.language || 'en').toLowerCase(); lang = n.indexOf('ru') === 0 ? 'ru' : (n.indexOf('ka') === 0 ? 'ka' : 'en'); }
+  if (!lang) { lang = 'en'; }
   d.setAttribute('data-lang', lang);
   if (lang !== 'en') { d.className += ' i18n-pending'; setTimeout(function () { d.classList.remove('i18n-pending'); }, 1200); }
   try { var t = localStorage.getItem('nd-theme'); if (t) d.setAttribute('data-theme', t); } catch (e) {}

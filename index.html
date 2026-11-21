@@ -33,8 +33,7 @@
     if (p && langs.indexOf(p[1].toLowerCase()) > -1) lang = p[1].toLowerCase();
     if (!lang) { try { var s = localStorage.getItem('nd-lang'); if (langs.indexOf(s) > -1) lang = s; } catch (e) {} }
     if (!lang) {
-      var n = (navigator.language || 'en').toLowerCase();
-      lang = n.indexOf('ru') === 0 ? 'ru' : (n.indexOf('ka') === 0 ? 'ka' : 'en');
+      lang = 'en';
     }
     d.setAttribute('data-lang', lang);
     if (lang !== 'en') {
