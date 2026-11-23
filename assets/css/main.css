@@ -848,3 +848,5 @@ table.price td strong { font-weight: 700; }
 
 /* Language swap guard — see i18n.js */
 html.i18n-pending body { visibility: hidden; }
+
+.map-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
